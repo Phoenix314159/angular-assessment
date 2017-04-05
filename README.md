@@ -25,27 +25,43 @@
       - Setup the ui-view and ensure that the home.html loads first.
 
   3. Connect Navigation
-      - Connect the navigation links that are located in the index.html to point to their corresponding pages.
+      - Connect the navigation links that are located in the index.html to point to
+      their corresponding pages.
       - Ensure that the Shop clothing button routes to the shop state as well.
 
 
 ### Part 1b - Bring in data
 
-  1. For this section we will be getting all of the products and displaying them on the shopping page.
+  1. For this section we will be getting all of the products and displaying them
+  on the shopping page.
 
-  2. For the shop.html view you're going to need to make an api call to http://practiceapi.devmounta.in/products to get all the products. Use your shopService to make this request.
+  2. For the shop.html view you're going to need to make an api call to
+  http://practiceapi.devmounta.in/products to get all the products.
+  Use your shopService to make this request.
 
-  3. Ensure that the data that comes back from the request is saved in an array on $scope in your shopCtrl.
+  3. Ensure that the data that comes back from the request is saved in an
+  array on $scope in your shopCtrl.
 
-  4. Now that we have our data, loop over you data in shop.html   There is some sample html in `product-tmpl.html` for what each product should look like.  
+  4. Now that we have our data, loop over you data in shop.html
+  There is some sample html in `product-tmpl.html` for what each product should look like.
 
-  5. Setup the product-details.html page. You'll need to check the state params for the id being passed along in the route. After you have that id you'll need to make an api call to http://practiceapi.devmounta.in/products/ + the id being passed in the route. This will return the specific product based off the id you passed. Put that product on $scope and display in the view.
+  5. Setup the product-details.html page.
+  You'll need to check the state params for the id being passed along in the route.
+  After you have that id you'll need to make an api call to
+  http://practiceapi.devmounta.in/products/ + the id being passed in the route.
+  This will return the specific product based off the id you passed.
+  Put that product on $scope and display in the view.
 
-  After your data is displaying correctly you'll need to get the product-details view configured. In your routes file add a route called details. This route is going to have to handle the productId correctly.  
+  After your data is displaying correctly you'll need to get the product-details
+  view configured. In your routes file add a route called details.
+  This route is going to have to handle the productId correctly.
 
   6. Each product needs to :
-      - Be clickable on the title and navigate to the product details page passing along the detail of the item clicked on.
-      - All the styles are completed for you already so you'll just need to display the data in the right spot. <strong>LOOK FOR COMMENTS.</strong>
+      - Be clickable on the title and navigate to the product details page passing
+      along the detail of the item clicked on.
+      - All the styles are completed for you already so you'll just need to display
+
+      the data in the right spot. <strong>LOOK FOR COMMENTS.</strong>
 
   
 ### Part 1c - Basic logo directive
@@ -54,11 +70,14 @@
 
   2. Name the directive 'logo' and restrict it to an element.
 
-  3. Create a templateUrl for your directive called 'logo.html' in your views. Use the image found in the img folder for the logo.
+  3. Create a templateUrl for your directive called 'logo.html'
+  in your views. Use the image found in the img folder for the logo.
 
   4. Place your logo directive in the index.html file right above the opening nav tag.
 
-  5. Give your directive element a class and use position absolute and additional css to place the logo in the upper right corner and resize the image to make it look good. Write your css in the app.css file in the styles folder.
+  5. Give your directive element a class and use position absolute and
+  additional css to place the logo in the upper right corner and
+  resize the image to make it look good. Write your css in the app.css file in the styles folder.
 
 
 ## Part 2

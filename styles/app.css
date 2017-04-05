@@ -12,6 +12,12 @@
 .jumbotron h1 {
     color: #fff;
 }
+.logo{
+    position: absolute;
+    right:5%;
+    width: 5%;
+    height: 5%;
+}
 
 
 .main-cta {
